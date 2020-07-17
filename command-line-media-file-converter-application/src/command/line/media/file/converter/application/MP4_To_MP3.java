@@ -16,8 +16,8 @@ public class MP4_To_MP3 {
     
     public static void mp4_to_mp3 (File video)
     {
-        System.out.println("Start Converting.....");
-        File Audio = new File("C:\\Users\\Prageeth\\Desktop\\Command line File Convertor App\\command-line-media-file-converter-application\\Output Folder\\mp4Tomp3-converted\\Audio.mp3");
+        System.err.println("Start Converting.....");
+        File Audio = new File("C:\\Users\\Prageeth\\Desktop\\Command line File Convertor App\\command-line-media-file-converter-application\\media-converted\\mp4Tomp3-converted\\Audio.mp3");
         AudioAttributes audio = new AudioAttributes();
         audio.setCodec("mp2");
         audio.setBitRate(new Integer (128000));
@@ -32,6 +32,7 @@ public class MP4_To_MP3 {
         try{
            encode.encode(video, Audio, attr);
            System.err.println("Convert Finished...!!!");
+           System.out.println("\n\n***** You Can Find The Converted File in Media-Converted *****\n\n");
         }
         catch(Exception e)
         {
