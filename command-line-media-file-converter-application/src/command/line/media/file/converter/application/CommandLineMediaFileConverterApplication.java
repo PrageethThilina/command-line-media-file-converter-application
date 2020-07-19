@@ -23,7 +23,7 @@ public class CommandLineMediaFileConverterApplication {
             
             System.out.println("***** Put The Files In To Media Folder According To Conversion Type You Want ***** \n");
 
-            System.out.println("Select The type you want to Convert : \n\nFor MP4_To_MP3 -> Press 1\nFor MP4_To_FLV -> Press 2 \nFor MP4_To_3GP -> Press 3 \nFor WAV_To_MP3 -> Press 4 \n\nPress The Number : ");
+            System.out.println("Select The type you want to Convert : \n\nFor MP4_To_MP3 -> Press 1\nFor MP4_To_FLV -> Press 2 \nFor MP4_To_3GP -> Press 3 \nFor WAV_To_MP3 -> Press 4 \nFor MP4_To_MKV -> Press 5  \n\nPress The Number : ");
             Scanner convert_type = new Scanner(System.in);
 
             char ch=convert_type.nextLine().charAt(0);
@@ -47,6 +47,11 @@ public class CommandLineMediaFileConverterApplication {
             {
                 File Audio = new File("C:/Users/Prageeth/Desktop/Command line File Convertor App/command-line-media-file-converter-application/media/wavTomp3/audio.wav");
                 WAV_To_MP3.wav_to_mp3(Audio);
+            }
+            if(ch=='5')
+            {
+                File Video = new File("C:/Users/Suren/Desktop/Command line File Convertor App/command-line-media-file-converter-application/media/mp4Tomkv/video.mp4");
+                mp4_to_mkv.Mp4_to_Mkv(Video);
             }
             else
             {
