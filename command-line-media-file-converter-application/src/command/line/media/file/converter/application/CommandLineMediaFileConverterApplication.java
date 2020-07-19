@@ -50,7 +50,7 @@ public class CommandLineMediaFileConverterApplication {
             }
             else
             {
-                System.err.println("wrong selection");
+                System.err.println("Wrong Selection");
             }
         
         }
